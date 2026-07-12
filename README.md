@@ -181,6 +181,41 @@ Used for sequential time-series prediction.
 The LSTM uses a 24-hour sliding window to learn temporal dependencies in pollutant concentrations.
 
 ---
+# Model Performance
+
+The models were evaluated using station-wise chronological train, validation, and test splits to preserve temporal ordering and avoid data leakage.
+
+## Random Forest Regressor
+
+| Metric | Validation | Test |
+|--------|-----------:|------:|
+| MAE | **2.3340** | **2.4208** |
+| RMSE | **5.8082** | **6.5916** |
+| R² Score | **0.9984** | **0.9954** |
+
+---
+
+## Long Short-Term Memory (LSTM)
+
+| Metric | Validation | Test |
+|--------|-----------:|------:|
+| MAE | **5.5170** | **5.5199** |
+| RMSE | **9.6747** | **9.9094** |
+| R² Score | **0.9954** | **0.9895** |
+
+---
+
+## Model Comparison
+
+| Metric | Random Forest | LSTM |
+|--------|--------------:|------:|
+| Test MAE | **2.4208** | 5.5199 |
+| Test RMSE | **6.5916** | 9.9094 |
+| Test R² Score | **0.9954** | 0.9895 |
+
+Both models demonstrated strong predictive performance on unseen chronological test data. Under the current experimental setup and evaluation protocol, the Random Forest model achieved lower prediction error and a higher coefficient of determination (R²) than the LSTM model.
+
+--- 
 
 # Data Preparation
 
