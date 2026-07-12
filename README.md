@@ -190,8 +190,7 @@ Training, validation, and testing data are separated without breaking temporal o
 
 Split ratio:
 
-- Training: 70%
-- Validation: 15%
+- Training: 70%- Validation: 15%
 - Testing: 15%
 
 ---
@@ -209,13 +208,7 @@ Completed:
 - Model serialization
 - Project organization
 
-Upcoming:
 
-- Hybrid Random Forest + LSTM prediction
-- Personalized pollution alerts
-- Route optimization module
-- Web application integration
-- Deployment
 
 ---
 
@@ -245,18 +238,6 @@ This repository includes:
 - Experimental results
 - Test scripts
 
----
-
-# Future Scope
-
-Planned enhancements include:
-
-- Hybrid ensemble prediction
-- Live AQI prediction using APIs
-- Traffic-aware cleaner route recommendation
-- Health-profile based personalized alerts
-- Web dashboard
-- Mobile application integration
 
 ---
 
@@ -269,5 +250,6 @@ Infosys Springboard Internship 2026
 ---
 
 # License
+
 
 This repository is intended for academic and educational purposes under the Infosys Springboard Internship Program.
